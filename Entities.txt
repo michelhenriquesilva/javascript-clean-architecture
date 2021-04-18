@@ -1,0 +1,17 @@
+Entities
+
+ParkingLot
+- code
+- capacity
+- openHour
+- closeHour
+
+ParkedCar
+- code
+- plate
+- date
+
+Use cases
+
+EnterParkingLot
+LeaveParkingLot
