@@ -5,7 +5,7 @@ export default class ParkingLot {
   closeHour: number;
   occupiedSpaces: number;
 
-  constructor(code, capacity, openHour, closeHour, occupiedSpaces) {
+  constructor(code: string, capacity: number, openHour: number, closeHour: number, occupiedSpaces: number) {
     this.code = code;
     this.capacity = capacity;
     this.openHour = openHour;

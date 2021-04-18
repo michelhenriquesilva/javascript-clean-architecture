@@ -1,9 +1,9 @@
 export default class ParkedCar {
-  code: any;
-  plate: any;
-  date: any;
+  code: string;
+  plate: string;
+  date: Date;
 
-  constructor(code, plate, date) {
+  constructor(code: string, plate: string, date: Date) {
     if (!/[A-Z]{3}-[0-9]{4}/.test(plate)) throw new Error("Invalid plate");
     this.code = code;
     this.plate = plate;
