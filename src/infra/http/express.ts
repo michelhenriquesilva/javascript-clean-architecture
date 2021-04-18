@@ -1,9 +1,12 @@
-import Express from 'express'
-import ExpressAdapter from '../../adapter/ExpressAdapter'
-import ParkingLotController from '../../controller/ParkingLotController'
+import Express from "express";
+import ExpressAdapter from "../../adapter/ExpressAdapter";
+import ParkingLotController from "../../controller/ParkingLotController";
 
-const app = Express()
+const app = Express();
 
-app.get('/parkinglots/:code', ExpressAdapter.create(ParkingLotController.getParkingLot))
+app.get(
+  "/parkinglots/:code",
+  ExpressAdapter.create(ParkingLotController.getParkingLot)
+);
 
-app.listen(3000)
+app.listen(3000);

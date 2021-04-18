@@ -1,13 +1,13 @@
 import ParkingLotRepository from "../core/repository/ParkingLotRepository";
 
-export default class GetParkingLot{
-    parkingLotRepository: ParkingLotRepository;
+export default class GetParkingLot {
+  parkingLotRepository: ParkingLotRepository;
 
-    constructor(parkingLotRepository: ParkingLotRepository){
-        this.parkingLotRepository = parkingLotRepository
-    }
+  constructor(parkingLotRepository: ParkingLotRepository) {
+    this.parkingLotRepository = parkingLotRepository;
+  }
 
-    execute(code: string){
-        return this.parkingLotRepository.getParkingLot(code)
-    }
+  execute(code: string) {
+    return this.parkingLotRepository.getParkingLot(code);
+  }
 }
